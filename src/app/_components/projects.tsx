@@ -1,38 +1,9 @@
 import { H2 } from "@/components/heading";
 import { Badge } from "@/components/ui/badge";
-import { Link } from "lucide-react";
+import { Link as LinkIcon } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";
-
-type TProject = {
-  index: number;
-  name: string;
-  description: React.ReactNode;
-  technologies: string[];
-  githubUrl?: string;
-  url?: string;
-};
-
-const projects: TProject[] = [
-  {
-    index: 1,
-    name: "Hotel Reservation Site",
-    description:
-      "Hotel Reservation Site is a fully functional Next.js application that replicates core Airbnb features. It includes user authentication with NextAuth.js, seamless data handling using Prisma, and an interactive UI with libraries like React-Leaflet, React-Select, and React-Date-Range. Built with TypeScript and Tailwind CSS, the project supports listing exploration, booking functionalities, and image management via Cloudinary. Optimized for performance and maintainability, it employs Next.js scripts, Axios for API communication, and bcrypt for secure authentication.",
-    technologies: [
-      "Next.js",
-      "React.js",
-      "Tailwind CSS",
-      "Axios",
-      "bcrypt",
-      "NextAuth.js",
-      "Prisma",
-      "TypeScript",
-      "Cloudinary",
-      "React-Leaflet",
-    ],
-    url: "https://hotel-reservation-harsh6575.vercel.app/",
-  },
-];
+import { TProject } from "../types";
+import { projects } from "../constants";
 
 const ProjectCard = ({
   index,
@@ -71,7 +42,7 @@ const ProjectCard = ({
         {url && (
           <a href={url} target="_blank">
             <Badge variant={"secondary"} className="flex items-center gap-2">
-              <Link className="h-4 w-4" />
+              <LinkIcon className="h-4 w-4" />
               Explore the live demo
             </Badge>
           </a>
