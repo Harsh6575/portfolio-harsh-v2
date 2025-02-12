@@ -3,9 +3,14 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { github, linkedin, twitterx } from "@/assets/icons";
+import { github, gmail, linkedin, twitterx } from "@/assets/icons";
 
 const socialLinks = [
+  {
+    name: "Mail",
+    iconUrl: gmail,
+    link: "mailto:harshvansjaliya3@gmail.com",
+  },
   {
     name: "GitHub",
     iconUrl: github,
@@ -36,7 +41,7 @@ export const Footer = () => {
 
         <div className="flex gap-5 justify-center items-center">
           {socialLinks.map((link) => (
-            <Link key={link.name} href={link.link} target="_blank">
+            <Link key={link.name} href={link.link} target="_blank" rel="noopener noreferrer">
               <Image
                 src={link.iconUrl}
                 alt={link.name}

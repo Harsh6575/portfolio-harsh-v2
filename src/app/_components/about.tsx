@@ -15,9 +15,9 @@ export const About = () => {
           leveraging{" "}
           <span className="font-semibold">
             Python, Django, and PostgreSQL along with tools like Jupyter
-            Notebooks, yfinance, pandas
+            Notebooks, yfinance, pandas, and
+            NumPy.
           </span>
-          , and NumPy.
         </p>
       </div>
     </section>
