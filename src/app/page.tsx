@@ -1,5 +1,6 @@
 import { About } from "./_components/about";
 import { Contact } from "./_components/contact";
+import { DownloadResume } from "./_components/download-resume";
 import { Experience } from "./_components/experience";
 import { Footer } from "./_components/footer";
 import { Hero } from "./_components/hero";
@@ -16,6 +17,8 @@ export default function Home() {
       <Projects />
       <Contact />
       <Footer />
+
+      <DownloadResume />
     </main>
   );
 }
