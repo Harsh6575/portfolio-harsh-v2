@@ -1,5 +1,5 @@
 export type TProject = {
-  index: number;
+  // index: number;
   name: string;
   description: React.ReactNode;
   technologies: string[];

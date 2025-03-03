@@ -12,7 +12,10 @@ const ProjectCard = ({
   technologies,
   githubUrl,
   url,
-}: TProject) => {
+}: TProject & {
+  index: number;
+
+}) => {
   return (
     <div className="w-full border-none rounded-none shadow-none flex flex-col gap-4">
       <p className="font-semibold">
@@ -63,8 +66,8 @@ export const Projects = () => {
         </p>
       </div> */}
       <div className="grid gap-8">
-        {projects.map((project) => (
-          <ProjectCard key={project.name} {...project} />
+        {projects.map((project,index) => (
+          <ProjectCard key={project.name} {...project} index={index+1} />
         ))}
       </div>
     </section>
