@@ -12,7 +12,7 @@ export const DownloadResume = () => {
                 <TooltipTrigger asChild>
                     <Button className="fixed sm:bottom-12 sm:right-12 bottom-8 right-8 z-10" onClick={() => {
                         // Open the PDF file in a new tab
-                        window.open('/Harsh_Vansjaliya_1.pdf', '_blank');
+                        window.open('/Harsh_Vansjaliya_Resume.pdf', '_blank');
                     }}>
                         <GoDownload />
                         <span className="ml-2 sr-only">Download Resume</span>
