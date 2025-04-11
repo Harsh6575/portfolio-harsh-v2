@@ -11,13 +11,18 @@ export const About = () => {
           <span className="font-semibold">
             Next.js, TypeScript, and Tailwind CSS
           </span>
-          . I&apos;m diving into the exciting world of algorithmic trading,
-          leveraging{" "}
+          .
+        </p>
+        <p className="text-justify leading-6">
+          Lately, I&apos;ve been diving deep into the world of algorithmic trading - working with{" "}
           <span className="font-semibold">
-            Python, Django, and PostgreSQL along with tools like Jupyter
-            Notebooks, yfinance, pandas, and
-            NumPy.
+            Python, Django, and PostgreSQL,
           </span>
+          along with tools like {" "}
+          <span className="font-semibold">
+            Jupyter Notebooks, yfinance, pandas, and NumPy
+          </span>
+          to gain insights from market data and build automated strategies.
         </p>
       </div>
     </section>

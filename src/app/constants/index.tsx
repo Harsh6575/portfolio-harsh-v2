@@ -2,12 +2,17 @@
 import { TProject } from "../types";
 
 export const skills: { name: string }[] = [
-  { name: "TypeScript" },
-  { name: "React.js" },
   { name: "Next.js" },
+  { name: "React.js" },
+  { name: "TypeScript" },
+  { name: "JavaScript" },
+  {name: "Shadcn UI"},
+  { name: "Material-UI" },
+  { name: "Framer Motion" },
+  { name: "React-Query" },
   { name: "Tailwind CSS" },
-  { name: "Express.js" },
   { name: "Node.js" },
+  { name: "Express.js" },
   { name: "Python" },
   { name: "Django" },
   { name: "Java" },
