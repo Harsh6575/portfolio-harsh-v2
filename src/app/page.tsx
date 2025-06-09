@@ -14,6 +14,12 @@ export default function Home() {
       <Head>
         <title>Harsh Vansjaliya | Software Developer Portfolio</title>
         <meta name="description" content="Portfolio of Harsh Vansjaliya, a Software Developer specializing in Next.js, React, and TypeScript." />
+        <meta property="og:title" content="Harsh Vansjaliya | Software Developer Portfolio" />
+        <meta property="og:description" content="Portfolio of Harsh Vansjaliya, a Software Developer with expertise in Next.js, React, TypeScript, and scalable systems." />
+        <meta property="og:image" content="/meta-image.png" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+
       </Head>
 
       <main className="max-w-5xl mx-auto sm:p-16 sm:pb-12 p-8 grid gap-10 md:text-base text-xs">

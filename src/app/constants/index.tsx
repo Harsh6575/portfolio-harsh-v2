@@ -1,35 +1,14 @@
 // import Link from "next/link";
 import { TProject } from "../types";
 
-export const skills: { name: string }[] = [
-  { name: "Next.js" },
-  { name: "React.js" },
-  { name: "TypeScript" },
-  { name: "JavaScript" },
-  {name: "Shadcn UI"},
-  { name: "Material-UI" },
-  { name: "Framer Motion" },
-  { name: "React-Query" },
-  { name: "Tailwind CSS" },
-  { name: "Node.js" },
-  { name: "Express.js" },
-  { name: "Python" },
-  { name: "Django" },
-  { name: "Java" },
-  { name: "PostgreSQL" },
-  { name: "MongoDB" },
-  { name: "MySQL" },
-  { name: "GraphQL" },
-  { name: "RESTApi" },
-  { name: "Prisma ORM" },
-  // { name: "Jupyter Notebooks" },
-  // { name: "pandas" },
-  // { name: "NumPy" },
-  { name: "Git" },
-  { name: "GitHub" },
-  { name: "Bitbucket" },
-  { name: "Docker" },
-];
+export const skillGroups = {
+  Frontend: ["Next.js", "React.js", "TypeScript", "JavaScript", "Shadcn UI", "Material-UI", "Tailwind CSS", "Framer Motion", "React-Query"],
+  Backend: ["Node.js", "Express.js", "Python", "Django", "Java"],
+  Database: ["PostgreSQL", "MongoDB", "MySQL"],
+  APIs: ["GraphQL", "RESTApi"],
+  DevOps: ["Docker", "Git", "GitHub", "Bitbucket"],
+  Tools: ["Prisma ORM", "Drizzle ORM"]
+};
 
 export const projects: TProject[] = [
   {
@@ -51,36 +30,6 @@ export const projects: TProject[] = [
     ],
     url: "https://hotel-reservation-harsh6575.vercel.app/",
   },
-  // {
-  //   // index: 2,
-  //   name: "India's Got Latent Application clone",
-  //   description: (
-  //     <>
-  //       I Inspired by a{" "}
-  //       <Link
-  //         href="https://www.youtube.com/watch?v=nQ0M2dYCXxg"
-  //         className="text-foreground underline underline-offset-4"
-  //       >
-  //         YouTube tutorial by Harkirat Singh
-  //       </Link>
-  //       , I&apos;m building a Turborepo monorepo that includes multiple
-  //       frontends admin-web, user-web, mobile, worker, and an HTTP backend—along
-  //       with a main backend server in Rust. This project is helping me learn
-  //       Turborepo best practices and build familiarity with Rust.
-  //     </>
-  //   ),
-  //   technologies: [
-  //     "Turborepo",
-  //     "Next.js",
-  //     "React",
-  //     "TypeScript",
-  //     "Rust (1st application)",
-  //     "Node.js",
-  //     "Axios",
-  //     "Framer Motion",
-  //     "Redis",
-  //   ],
-  // },
   {
     // index: 3,
     name: "Library Management System",
